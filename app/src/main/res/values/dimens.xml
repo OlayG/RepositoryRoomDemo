@@ -1,3 +1,8 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margeleft">10</dimen>
+    <dimen name="margeright">10</dimen>
+    <dimen name="margebottom">10</dimen>
+    <dimen name="marginTop">10</dimen>
+    <dimen name="marginStart">10</dimen>
 </resources>

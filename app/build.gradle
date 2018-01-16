@@ -25,17 +25,15 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.google.dagger:dagger:' + rootProject.ext.daggerVersion
-    compile 'com.jakewharton:butterknife:' + rootProject.ext.butterknifeVersion
-    compile 'org.greenrobot:eventbus:' + rootProject.ext.eventbusVersion
-    compile 'io.reactivex.rxjava2:rxjava:' + rootProject.ext.rxjavaVersion
-    compile 'io.reactivex.rxjava2:rxandroid:' + rootProject.ext.rxjavaVersion
-    compile 'com.squareup.retrofit2:retrofit:' + rootProject.ext.rxjavaretrofitVersion
-    compile 'com.squareup.retrofit2:adapter-rxjava2:' + rootProject.ext.rxjavaretrofitVersion
-    compile 'com.squareup.retrofit2:converter-gson:' + rootProject.ext.rxjavaretrofitVersion
-    compile group: 'com.google.code.gson', name: 'gson', version: rootProject.ext.gsonVersion
-    compile 'com.google.code.gson:gson:' + rootProject.ext.gsonVersion
-
+    compile "com.google.dagger:dagger:$daggerVersion"
+    compile "com.jakewharton:butterknife:$butterknifeVersion"
+    compile "org.greenrobot:eventbus:$eventbusVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rxjavaVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rxjavaVersion"
+    compile "com.squareup.retrofit2:retrofit:$rxjavaretrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rxjavaretrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rxjavaretrofitVersion"
+    compile "com.google.code.gson:gson:$gsonVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
     compile "com.jakewharton.timber:timber:$timberVersion"

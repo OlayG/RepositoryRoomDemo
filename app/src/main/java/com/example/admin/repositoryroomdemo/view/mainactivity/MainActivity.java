@@ -7,6 +7,7 @@ import android.view.MenuItem;
 
 import com.example.admin.repositoryroomdemo.MyApp;
 import com.example.admin.repositoryroomdemo.R;
+import com.example.admin.repositoryroomdemo.data.entities.User;
 import com.example.admin.repositoryroomdemo.data.local.UserDao;
 import com.example.admin.repositoryroomdemo.view.base.BaseActivity;
 
@@ -19,7 +20,6 @@ public class MainActivity extends BaseActivity implements MainActivityContract.V
     SharedPreferences preferences;
     @Inject
     UserDao dao;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,5 +55,15 @@ public class MainActivity extends BaseActivity implements MainActivityContract.V
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void showError(String error) {
+
+    }
+
+    @Override
+    public void loadUser(User user) {
+
     }
 }
